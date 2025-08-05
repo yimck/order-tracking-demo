@@ -1,36 +1,65 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Order/Delivery Tracking Demo
+
+This is a demo project showcasing Inngest's [Realtime API](https://www.inngest.com/docs/features/realtime). It takes a Doordash-like approach to a delivery platform, allowing business's to book deliveries to fulfill their customer orders.
+
+The inspiration came from helping my mom start her flower business and seeing firsthand the importance of a reliable delivery service. By using Inngest's Realtime API, businesses can monitor their deliveries as they happen and interact with a chatbot to analyze their delivery history.
+
+![Screenshot of the application's UI](./order-tracking-demo-screenshot.png)
+
+Features:
+
+- Realtime delivery status updates
+- Chatbot assitance with summarizing and analyzing delivery history
 
 ## Getting Started
 
-First, run the development server:
+1. **Clone the repository:**
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+    ```bash
+    git clone https://github.com/yimck/order-tracking-demo.git
+    ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. **Install project dependencies:**
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+    ```bash
+    npm i
+    # or
+    yarn
+    # or
+    pnpm i
+    ```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+3. **Set the OpenAI API key:**
 
-## Learn More
+    - If you have not yet created an OpenAI API key, go to: https://platform.openai.com/api-keys
+    - Then create a `.env` folder in the project root directory and add the following:
 
-To learn more about Next.js, take a look at the following resources:
+    ```bash
+    OPEN_AI_KEY=<your_api_key>
+    ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+4. **Run the development server:**
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+    ```bash
+    npm run dev
+    # or
+    yarn dev
+    # or
+    pnpm dev
+    # or
+    bun dev
+    ```
 
-## Deploy on Vercel
+    Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+5. **Run the Inngest development server:**
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+    ```bash
+    npx inngest-cli@latest dev
+    ```
+
+    Open [http://localhost:8288](http://localhost:8288) with your browser to see the result.
+
+## Notes
+
+[Demo Notes](./Notes.pdf)
