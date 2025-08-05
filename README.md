@@ -21,6 +21,8 @@ Features:
 
 2. **Install project dependencies:**
 
+    In the project root directory:
+
     ```bash
     npm i
     # or
@@ -35,7 +37,7 @@ Features:
     - Then create a `.env` folder in the project root directory and add the following:
 
     ```bash
-    OPEN_AI_KEY=<your_api_key>
+    OPENAI_API_KEY=<your_api_key>
     ```
 
 4. **Run the development server:**
